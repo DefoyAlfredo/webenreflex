@@ -1,8 +1,8 @@
 import reflex as rx 
-from link_bio.styles.styles import Size as Size
-from link_bio.styles.Colors import Colors as Colors 
-from link_bio.styles.Colors import TextColor as TextColor
-from link_bio.styles.fonts import FontWeight as FontWeight
+from webenreflex.styles.styles import Size as Size
+from webenreflex.styles.Colors import Colors as Colors 
+from webenreflex.styles.Colors import TextColor as TextColor
+from webenreflex.styles.fonts import FontWeight as FontWeight
 
 
 def info_text(title: str, body: str) -> rx.Component:
