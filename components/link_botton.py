@@ -1,8 +1,8 @@
 import reflex as rx
-import link_bio.styles.styles as styles
-from link_bio.styles.styles import  Size as Size
-from link_bio.styles.styles import Spacing as Spacing
-from link_bio.styles.Colors import Colors as Colors 
+import webenreflex.styles.styles as styles
+from webenreflex.styles.styles import  Size as Size
+from webenreflex.styles.styles import Spacing as Spacing
+from webenreflex.styles.Colors import Colors as Colors 
 
 
 def link_botton(title: str, body: str,  url: str,image: str) -> rx.Component:
