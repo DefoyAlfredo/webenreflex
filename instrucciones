@@ -1,0 +1,120 @@
+Estas instrucciones permiten ejecutar el proyecto desarrollado con Reflex 0.10.1 en un entorno local para desarrollo y pruebas. Las dependencias se encuentran definidas en el archivo requirements.
+
+Requisitos
+Python 3.11 o superior
+Git
+Conexión a Internet para descargar dependencias
+Terminal (PowerShell, CMD, Bash o equivalente)
+
+Verificar las versiones instaladas:
+
+Shell
+python --version
+pip --version
+git --version
+
+1. Clonar el repositorio
+Shell
+git clone https://github.com/DefoyAlfredo/webenreflex
+cd repositorio
+2. Crear un entorno virtual
+Windows
+Shell
+python -m venv .venv
+.venv\Scripts\activate
+Linux / macOS
+Shell
+python3 -m venv .venv
+source .venv/bin/activate
+
+Si la activación fue exitosa, la terminal mostrará:
+
+(.venv)
+
+al inicio de la línea de comandos.
+
+3. Actualizar pip
+Shell
+python -m pip install --upgrade pip
+4. Instalar dependencias
+
+Instalar todas las librerías necesarias definidas en requirements, incluyendo 
+reflex==0.10.1, 
+granian==2.8.5, 
+httpx==0.28.1,
+y los componentes de interfaz utilizados por el proyecto.
+
+Shell
+reflex init para inicializar de forma genrica 
+o
+pip install -r requirements.txt
+se recomienda las  pip install -r requirements.txt
+
+
+5. Verificar la instalación de Reflex
+Shell
+reflex --version
+
+Resultado esperado: 0.10.1
+
+correspondiente a la versión configurada en requirements.
+
+6. Iniciar la aplicación
+
+Desde la carpeta raíz del proyecto:
+
+Shell
+reflex run
+
+o para entorno de desarrollo:
+
+Shell
+reflex run --env dev
+ 
+7. Acceder a la aplicación
+
+Una vez iniciado el servidor, abrir un navegador web y acceder a:
+
+http://localhost:3000
+podremos detallar el puerto modificando el puerto de uso con el siguiente comando
+reflex run --frontend-port 8080
+dando el siguiente puerto
+http://localhost:8080
+
+
+Reflex iniciará automáticamente el frontend y backend necesarios para las pruebas locales.
+
+8. Detener la aplicación
+
+Para detener la ejecución:
+
+Plain Text
+Ctrl + C
+
+en la terminal donde se encuentra ejecutándose Reflex.
+
+Solución de Problemas
+Error al instalar dependencias
+
+Actualizar pip e intentar nuevamente:
+
+Shell
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+Error por entorno virtual dañado
+
+Eliminar y recrear el entorno:
+
+Shell
+deactivate
+rm -rf .venv
+python -m venv .venv
+Limpiar caché de Reflex
+Shell
+reflex db migrate
+reflex run
+Finalización
+
+Si todos los pasos anteriores se completaron correctamente, 
+la aplicación quedará disponible localmente para realizar pruebas funcionales, 
+validación de cambios y desarrollo continuo utilizando las dependencias definidas en requirements.
