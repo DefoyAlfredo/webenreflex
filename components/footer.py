@@ -1,7 +1,7 @@
 import reflex as rx 
 import datetime
-from link_bio.styles.styles import Size as Size
-from link_bio.styles.Colors import TextColor as TextColor
+from webenreflex.styles.styles import Size as Size
+from webenreflex.styles.Colors import TextColor as TextColor
 
 def footer() -> rx.Component:
     return rx.vstack(
