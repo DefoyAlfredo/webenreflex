@@ -1,9 +1,9 @@
 import reflex as rx 
 from enum import Enum
-from link_bio.styles.Colors import Colors 
-from link_bio.styles.Colors import TextColor as TextColor
-from link_bio.styles.fonts import  FontWeight as FontWeight
-from link_bio.styles.fonts import Font as Font
+from webenreflex.styles.Colors import Colors 
+from webenreflex.styles.Colors import TextColor as TextColor
+from webenreflex.styles.fonts import  FontWeight as FontWeight
+from webenreflex.styles.fonts import Font as Font
 
 
 MAX_WIDTH = "600px"
