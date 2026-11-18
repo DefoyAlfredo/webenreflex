@@ -1,12 +1,12 @@
 import reflex as rx 
-from link_bio.components.navbar import navbar
-from link_bio.views.header.header import header
-from link_bio.views.links.links import links
-from link_bio.components.footer import footer
-import link_bio.styles.styles as styles
-from link_bio.views.sponsors.sponsor import sponsor 
-from link_bio.styles.styles import Size as Size
-from link_bio.styles.fonts import Font as  Font
+from webenreflex.components.navbar import navbar
+from webenreflex.views.header.header import header
+from webenreflex.views.links.links import links
+from webenreflex.components.footer import footer
+import webenreflex.styles.styles as styles
+from webenreflex.views.sponsors.sponsor import sponsor 
+from webenreflex.styles.styles import Size as Size
+from webenreflex.styles.fonts import Font as  Font
 
 class State(rx.State):
     
