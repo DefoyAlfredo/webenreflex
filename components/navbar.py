@@ -1,8 +1,8 @@
 import reflex as rx
-import link_bio.styles.styles as Styles
-from link_bio.styles.styles import navbar_title_style
-from link_bio.styles.styles import Size as Size
-from link_bio.styles.Colors import Colors as Colors 
+import webenreflex.styles.styles as Styles
+from webenreflex.styles.styles import navbar_title_style
+from webenreflex.styles.styles import Size as Size
+from webenreflex.styles.Colors import Colors as Colors 
 
 def navbar()-> rx.Component:
     return rx.hstack(
