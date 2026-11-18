@@ -1,6 +1,6 @@
 import reflex as rx
 
-from link_bio.styles.styles import Size
+from webenreflex.styles.styles import Size
 
 
 def link_sponsor(imagen: str, url: str) -> rx.Component:
