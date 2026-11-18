@@ -1,8 +1,8 @@
 import reflex as rx
-from link_bio.styles.styles import Size as Size
-from link_bio.components.title import title
-from link_bio.components.link_sponsor import link_sponsor
-from link_bio.styles.styles import Size
+from webenreflex.styles.styles import Size as Size
+from webenreflex.components.title import title
+from webenreflex.components.link_sponsor import link_sponsor
+from webenreflex.styles.styles import Size
 
 
 def sponsor() -> rx.Component:
